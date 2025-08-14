@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prédiction Pneumonia</title>
+</head>
+<body>
+    <h2>Uploader une image de radiographie thoracique</h2>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Prédire</button>
+    </form>
+</body>
+</html>
