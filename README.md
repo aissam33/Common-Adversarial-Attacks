@@ -27,11 +27,11 @@ The number of iterations required to fool the model
 A heatmap of the perturbation (amplified for visibility)
 The L2 norm of the perturbation, highlighting its minimal magnitude
 # Generate your own adversarial images
-1.To generate your own DeepFool adversarial examples:
-2.Load a pre-trained ResNet‑34 model
-3.Provide an input image
-4.Run the deepfool function included in the script
-5.Visualize and analyze the perturbed output
+### 1.To generate your own DeepFool adversarial examples:
+### 2.Load a pre-trained ResNet‑34 model
+### 3.Provide an input image
+### 4.Run the deepfool function included in the script
+### 5.Visualize and analyze the perturbed output
 The provided implementation supports configurable parameters such as:
 Number of target classes,Overshoot factor,Maximum number of iterations
 This makes it easy to experiment with different attack strengths and observe their impact on model robustness.
