@@ -10,8 +10,8 @@ To generate your own adversarial images, simply use the provided image adversari
 This project evaluates the robustness of a deep neural network against DeepFool adversarial attacks.
 DeepFool is an iterative, gradient-based method designed to find the minimal perturbation required to change a model’s prediction. The perturbation is typically imperceptible to the human eye, yet sufficient to fool a high‑performance classifier.
 Unlike single-step attacks such as FGSM, DeepFool progressively approximates the decision boundary of the network by locally linearizing the classifier and computing the smallest displacement that crosses this boundary.
-<img width="756" height="251" alt="image" src="https://github.com/user-attachments/assets/0390e994-6c6f-4d44-aad7-8ece71c6873b" />
-#How it works
+<img width="756" height="251" alt="image" src="[https://github.com/user-attachments/assets/0390e994-6c6f-4d44-aad7-8ece71c6873b](https://github.com/aissam33/Common-Adversarial-Attacks/blob/main/deepfool.jpg)" />
+# How it works
 The attack is applied to a pre-trained ResNet‑34 model from torchvision.
 Given an input image, DeepFool:
 Computes the model’s original prediction
@@ -19,14 +19,14 @@ Iteratively estimates the closest decision boundary using class-wise gradients
 Applies the smallest perturbation required to cross that boundary
 Stops once the predicted label changes or a maximum number of iterations is reached
 The resulting adversarial image remains visually indistinguishable from the original but leads the network to a different and incorrect classification.
-#Visual analysis
+# Visual analysis
 The project provides:
 Side-by-side visualization of the original and adversarial images
 The final predicted labels before and after the attack
 The number of iterations required to fool the model
 A heatmap of the perturbation (amplified for visibility)
 The L2 norm of the perturbation, highlighting its minimal magnitude
-#Generate your own adversarial images
+# Generate your own adversarial images
 1.To generate your own DeepFool adversarial examples:
 2.Load a pre-trained ResNet‑34 model
 3.Provide an input image
