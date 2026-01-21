@@ -10,7 +10,7 @@ To generate your own adversarial images, simply use the provided image adversari
 This project evaluates the robustness of a deep neural network against DeepFool adversarial attacks.
 DeepFool is an iterative, gradient-based method designed to find the minimal perturbation required to change a model’s prediction. The perturbation is typically imperceptible to the human eye, yet sufficient to fool a high‑performance classifier.
 Unlike single-step attacks such as FGSM, DeepFool progressively approximates the decision boundary of the network by locally linearizing the classifier and computing the smallest displacement that crosses this boundary.
-<img width="756" height="251" alt="image" src="https://github.com/aissam33/Common-Adversarial-Attacks/blob/main/deepfool.jpg" />
+<img width="756" height="251" alt="image" src="https://github.com/aissam33/Common-Adversarial-Attacks/blob/main/Figuredf.png" />
 # How it works
 The attack is applied to a pre-trained ResNet‑34 model from torchvision.
 Given an input image, DeepFool:
