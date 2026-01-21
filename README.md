@@ -6,11 +6,11 @@ This project tests the vulnerability of a neural network model to adversarial at
 The project has been integrated into Flask to make it easier to use FGSM and perform tests on the pre-trained model. Simply start app.py, upload the first image (which produces correct results), and then upload the second, adversarially perturbed image. Although it visually appears identical to the first, it causes the model to produce incorrect predictions. 
 # Generate your own adversarial images
 To generate your own adversarial images, simply use the provided image adversariale fgsm.py code for the pre-trained model, available at the following link [Here](https://drive.google.com/file/d/18zWzZjQnA9_tjr49CANJZ2LOQv6VFoDr/view?usp=sharing)
-#DeepFool-Adversarial-Attack
+# DeepFool-Adversarial-Attack
 This project evaluates the robustness of a deep neural network against DeepFool adversarial attacks.
 DeepFool is an iterative, gradient-based method designed to find the minimal perturbation required to change a model’s prediction. The perturbation is typically imperceptible to the human eye, yet sufficient to fool a high‑performance classifier.
 Unlike single-step attacks such as FGSM, DeepFool progressively approximates the decision boundary of the network by locally linearizing the classifier and computing the smallest displacement that crosses this boundary.
-<img width="756" height="251" alt="image" src="[https://github.com/user-attachments/assets/0390e994-6c6f-4d44-aad7-8ece71c6873b](https://github.com/aissam33/Common-Adversarial-Attacks/blob/main/deepfool.jpg)" />
+<img width="756" height="251" alt="image" src="https://github.com/aissam33/Common-Adversarial-Attacks/blob/main/deepfool.jpg" />
 # How it works
 The attack is applied to a pre-trained ResNet‑34 model from torchvision.
 Given an input image, DeepFool:
